@@ -1,6 +1,6 @@
 import { useState } from "react";
-
 import React from "react";
+import logo from './logo/logo.png';
 
 function App() {
 
@@ -21,15 +21,12 @@ function App() {
   return (
 		<div className="App">
 			<h1>
-				<img src="../public/logo.png" alt=" " />
+				<img src={logo} alt=" " />
 				Paddy Counter App
 			</h1>
-			<h3>
+			<p>
 				Welcome to Paddy's Counter App
 				<span>👋</span>
-			</h3>
-			<p>
-				To get started, edit <code>src/App.js</code> and save to reload.
 			</p>
 			<div className="counter">
 				<h2>Counter Value: {counter}</h2>
@@ -41,10 +38,10 @@ function App() {
 				<div className="btn">
 					<button onClick={resetValue}>Reset Counter</button>
 				</div>
-      </div>
-      <div className="footer">
-        <p>Created by Paddy &copy;</p>
-      </div>
+			</div>
+			<div className="footer">
+				<p>Created by Paddy &copy;</p>
+			</div>
 		</div>
 	);
 }
