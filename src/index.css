@@ -32,11 +32,11 @@ code {
   margin-top: 0px;
   width: 30px;
   height: 30px;
-  margin-right: 1000px;
+  text-align: right;
 }
 .App p {
-  text-align: left;
-  padding: 80px;
+  text-align: center;
+  padding: 80px 80px 30px 80px;
 }
 .App h2 {
   padding-top: 10px;
@@ -57,16 +57,43 @@ code {
   transition: all 0.3s ease-in-out;
 }
 .App button:hover {
-  box-shadow: inset 4px 4px 8px #b8bcc4, inset -4px -4px 8px #ffffff;
+  box-shadow: inset 3px 1px 2px #b8bcc4;
 }
 .btn button {
   margin-left: 110px;
+  color: white;
+  background-color: red;
 }
 .counter {
   border: 1px solid #e0e5ec;
   background-color: #ececec;
+  padding-top: 50px;
+  width: 280px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 20px auto; /* Centers it horizontally on all screen sizes */
+  text-align: center;
+  box-shadow: 2px 4px 10px #b8bcc4, -6px -6px 12px #ffffff;
+  transition: all 0.3s ease-in-out;
 }
-.footer {
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .counter {
+    width: 240px; /* Slightly smaller width for tablets */
+    height: 280px;
+  }
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 480px) {
+  .counter {
+    width: 60%; /* Make the counter responsive by using percentage width */
+    height: 260px;
+  }
+}
+
+.footer p {
   text-align: left;
-  padding: 20px 0px 0px 0px;
+  padding: 120px 0px 0px 80px;
 }
